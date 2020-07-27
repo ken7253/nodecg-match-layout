@@ -1,0 +1,32 @@
+{
+  "name": "my-layout",
+  "version": "0.0.1",
+  "description": "nodeCG bundle for e-sport match",
+  "main": "../../index.js",
+  "scripts": {
+    "start": "node ../.."
+  },
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "author": "ken7253",
+  "license": "ISC",
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "main Panel",
+        "title": "main Panel",
+        "width": 4,
+        "file": "main-panel.html"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "match.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+@import url(./reboot.css);
+@import url(./var.css);
+
+body {
+	font-family: urw-din-semi-condensed, tbudgothic-std, sans-serif;
+	font-weight: 900;
+	position: relative;
+	overflow: hidden;
+	width: var(--window-width);
+	height: var(--window-height);
+}
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#displayTeams {
+	position: absolute;
+	top: 130px;
+	width: 100%;
+	height: 155px;
+}
+#displayTeams ul {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	letter-spacing: 0.05em;
+}
+#displayTeams ul li {
+	width: 470px;
+	font-size: 2rem;
+	color: var(--color-text);
+	line-height: 1.5;
+	text-transform: uppercase;
+	font-weight: bolder;
+	opacity: 0.9;
+}
+#blueTeam {
+	background-color: var(--color-bule);
+	text-align: end;
+	padding-right: 45px;
+	transform: skewX(40deg);
+	transform-origin: bottom left;
+	border-left: solid 15px var(--color-text);
+}
+#blueTeam span {
+	transform: skewX(-40deg);
+	transform-origin: bottom left;
+	display: block;
+}
+#redTeam {
+	background-color: var(--color-theme);
+	text-align: start;
+	padding-left: 45px;
+	transform: skewX(-40deg);
+	transform-origin: bottom left;
+	border-right: solid 15px var(--color-text);
+}
+#redTeam span {
+	transform: skewX(40deg);
+	transform-origin: bottom left;
+	display: block;
+}
