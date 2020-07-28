@@ -1,5 +1,5 @@
 {
-  "name": "my-layout",
+  "name": "nodecg-match-layout",
   "version": "0.0.1",
   "description": "nodeCG bundle for e-sport match",
   "main": "../../index.js",

@@ -2,11 +2,11 @@
 const blueTeam = document.getElementById("blueTeam");
 const redTeam = document.getElementById("redTeam");
 const teamsRep = nodecg.Replicant("teams", {
-	defaultValue: { redTeam: "RedTeam", blueTeam: "blueTeam" },
+	defaultValue: ["RedTeam","blueTeam"],
 });
 
 teamsRep.on('change', newValue => {
-    blueTeam.innerHTML = "<span>" + newValue.buleTeam + "</span>";
-    redTeam.innerHTML = "<span>" + newValue.redTeam + "</span>";
+    blueTeam.innerHTML = "<span>" + newValue[0] + "</span>";
+    redTeam.innerHTML = "<span>" + newValue[1] + "</span>";
     console.log(newValue)
 });
