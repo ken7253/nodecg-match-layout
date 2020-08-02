@@ -9,8 +9,7 @@ body {
 	width: var(--window-width);
 	height: var(--window-height);
 }
-ul,
-li {
+ul,li {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -37,7 +36,7 @@ li {
 	font-weight: bolder;
 	opacity: 0.9;
 }
-#blueTeam {
+.blueTeam {
 	background-color: var(--color-bule);
 	text-align: end;
 	padding-right: 45px;
@@ -45,12 +44,12 @@ li {
 	transform-origin: bottom left;
 	border-left: solid 15px var(--color-text);
 }
-#blueTeam span {
+.blueTeam span {
 	transform: skewX(-40deg);
 	transform-origin: bottom left;
 	display: block;
 }
-#redTeam {
+.redTeam {
 	background-color: var(--color-theme);
 	text-align: start;
 	padding-left: 45px;
@@ -58,7 +57,7 @@ li {
 	transform-origin: bottom left;
 	border-right: solid 15px var(--color-text);
 }
-#redTeam span {
+.redTeam span {
 	transform: skewX(40deg);
 	transform-origin: bottom left;
 	display: block;
