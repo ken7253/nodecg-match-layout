@@ -17,7 +17,7 @@ ul,li {
 
 #displayTeams {
 	position: absolute;
-	top: 130px;
+	top: 90px;
 	width: 100%;
 	height: 155px;
 }
@@ -28,8 +28,8 @@ ul,li {
 	letter-spacing: 0.05em;
 }
 #displayTeams ul li {
-	width: 470px;
-	font-size: 2rem;
+	width: 180px;
+	font-size: 1.5rem;
 	color: var(--color-text);
 	line-height: 1.5;
 	text-transform: uppercase;
@@ -39,10 +39,11 @@ ul,li {
 .blueTeam {
 	background-color: var(--color-bule);
 	text-align: end;
-	padding-right: 45px;
+	padding-right: 35px;
+	margin-right: 5px;
 	transform: skewX(40deg);
 	transform-origin: bottom left;
-	border-left: solid 15px var(--color-text);
+	border-left: solid 10px var(--color-text);
 }
 .blueTeam span {
 	transform: skewX(-40deg);
@@ -52,13 +53,32 @@ ul,li {
 .redTeam {
 	background-color: var(--color-theme);
 	text-align: start;
-	padding-left: 45px;
+	padding-left: 35px;
+	margin-left: 5px;
 	transform: skewX(-40deg);
 	transform-origin: bottom left;
-	border-right: solid 15px var(--color-text);
+	border-right: solid 10px var(--color-text);
 }
 .redTeam span {
 	transform: skewX(40deg);
 	transform-origin: bottom left;
 	display: block;
+}
+
+.winRounds span {
+    background-color: #ff0;
+    width: 20%;
+    height: 5px;
+    transform: skewX(5deg);
+}
+.winRounds {
+	display: flex;
+}
+#blueWinRounds {
+	justify-content: flex-end;
+	margin-right: -35px;
+}
+#redWinRounds {
+	justify-content: flex-start;
+	margin-left: -35px;
 }

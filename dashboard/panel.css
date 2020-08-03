@@ -2,6 +2,9 @@
 @import url("./var.css");
 
 a:hover,input:hover {opacity: .9;}
+input,select {
+    min-width: 100px;
+}
 input[type*="button"]{
     background-color: #525f78;
     border: none;
@@ -15,14 +18,14 @@ ul,li{
     margin: 0;
     padding: 0;
 }
-.teamsControl {
+section {
     padding: 10px;
 }
 .teamsControl li {
     padding-bottom: 10px;
     display: table;
 }
-.teamsControl li p,
+.teamsControl li label,
 .teamsControl li input {
     display: table-cell;
     padding-right: 20px;

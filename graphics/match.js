@@ -8,5 +8,4 @@ const teamsRep = nodecg.Replicant('teams', {
 teamsRep.on('change', newValue => {
 	blueTeamValue.innerText = newValue[0];
 	redTeamValue.innerText = newValue[1];
-	console.log(newValue);
 });

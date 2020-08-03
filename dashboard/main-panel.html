@@ -17,15 +17,48 @@
 </script>
 </head>
 <body>
-<div class="teamsControl">
-<h1>チーム設定</h1>
+<section class="teamsControl">
+<h2>チーム設定</h2>
 <ul>
-<li><p>先攻チーム</p><input type="text" value="" id="firstAttack"></li>
-<li><p>後攻チーム</p><input type="text" value="" id="secondAttack"></li>
+<li><label>先攻チーム</label><input type="text" value="" id="firstAttack"></li>
+<li><label>後攻チーム</label><input type="text" value="" id="secondAttack"></li>
 </ul>
 <input id="acceptTeams" type="button" value="確定">
 <input id="switchTeams" type="button" value="攻守交代">
+</section>
+<section class="roundControl">
+<h2>ラウンド設定</h2>
+<ul>
+<li><label for="bestOfRound">BO</label>
+<select name="bestOfRound">
+<option value="bestOfOne">1</option>
+<option value="bestOfThree">3</option>
+<option value="bestOfFive">5</option>
+</select></li>
+<li><label id="roundFirstTeam"></label>
+<select name="winRound" id="firstAttackRound">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+</li>
+<li><label id="roundSecondTeam"></label>
+<select name="winRound" id="secondAttackRound">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+</li>
+</ul>
+<input id="acceptRound" type="button" value="確定">
+<input id="resetRound" type="button" value="リセット">
+</section>
 <script src="./main.js"></script>
-</div>
 </body>
 </html>
