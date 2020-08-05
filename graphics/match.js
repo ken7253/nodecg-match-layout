@@ -1,11 +1,13 @@
 'use strict';
-const blueTeamValue = document.getElementById("blueTeamValue");
-const redTeamValue = document.getElementById("redTeamValue");
+// DOM
+const teamAlfa = document.getElementById("blueTeamValue");
+const teamBravo = document.getElementById("redTeamValue");
+// Replicant
 const teamsRep = nodecg.Replicant('teams', {
-	defaultValue: ['defaultTeam-A', 'defaultTeam-B'],
+	defaultValue: ['teamAlfa', 'teamBravo'],
 });
-
+// function
 teamsRep.on('change', newValue => {
-	blueTeamValue.innerText = newValue[0];
-	redTeamValue.innerText = newValue[1];
+	teamAlfa.innerText = newValue[0];
+	teamBravo.innerText = newValue[1];
 });
