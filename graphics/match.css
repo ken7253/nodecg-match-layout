@@ -74,11 +74,11 @@ ul,li {
 .winRounds {
 	display: flex;
 }
-#blueWinRounds {
+#alfaWinCounter {
 	justify-content: flex-end;
 	margin-right: -35px;
 }
-#redWinRounds {
+#bravoWinCounter {
 	justify-content: flex-start;
 	margin-left: -35px;
 }

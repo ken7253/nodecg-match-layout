@@ -7,7 +7,6 @@ const roundCountBravo = document.getElementById('roundBravo').value;
 // Replicant
 const teamsRep = nodecg.Replicant('teams');
 
-// function
 acceptTeams.addEventListener('click', () => {
 	const teamAlfa = document.getElementById('teamAlfa').value;
 	const teamBravo = document.getElementById('teamBravo').value;
@@ -17,3 +16,4 @@ acceptTeams.addEventListener('click', () => {
 switchTeams.addEventListener('click', () => {
 	teamsRep.value.reverse();
 });
+// Function
