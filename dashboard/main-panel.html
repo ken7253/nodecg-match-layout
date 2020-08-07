@@ -20,10 +20,10 @@
 <section class="teamsControl">
 <h2>チーム設定</h2>
 <ul>
-<li><label>先攻チーム</label>
-    <input type="text" value="" id="teamAlfa"></li>
-<li><label>後攻チーム</label>
-    <input type="text" value="" id="teamBravo"></li>
+<li><label>先攻チーム<input type="text" value="" id="teamAlfa">
+</label></li>
+<li><label>後攻チーム<input type="text" value="" id="teamBravo">
+</label></li>
 </ul>
 <input id="acceptTeams" type="button" value="確定">
 <input id="switchTeams" type="button" value="攻守交代">
@@ -31,31 +31,20 @@
 <section class="roundControl">
 <h2>ラウンド設定</h2>
 <ul>
-<li><label for="bestOfRound">BO</label>
+<li><label for="bestOfRound">BO
 <select name="bestOfRound" id="roundLimit">
-<option value="bestOfOne">1</option>
-<option value="bestOfThree">3</option>
-<option value="bestOfFive">5</option>
-</select></li>
-<li><label id="roundAlfaName"></label>
-<select name="winRound" id="roundAlfa">
-<option value="0">0</option>
 <option value="1">1</option>
-<option value="2">2</option>
 <option value="3">3</option>
-<option value="4">4</option>
 <option value="5">5</option>
-</select>
+</select></label></li>
+<li><label id="roundAlfaName">
+<select name="winRound" id="roundAlfa"></select>
+</label>
 </li>
-<li><label id="roundBravoName"></label>
+<li><label id="roundBravoName">
 <select name="winRound" id="roundBravo">
-<option value="0">0</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
 </select>
+</label>
 </li>
 </ul>
 <input id="acceptRound" type="button" value="確定">
