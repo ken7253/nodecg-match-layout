@@ -55,6 +55,10 @@ switchTeams.addEventListener('click', () => {
 });
 
 // RoundSetting
+window.addEventListener('load', () => {
+	createRoundDOM(1);
+});
+
 roundLimit.addEventListener('change', () => {
 	if (isPerformanceMode()) {
 		alert(PERFORMANCE_MODE_ERR);
@@ -70,3 +74,10 @@ acceptRounds.addEventListener('click', () => {
 	// Input data => graphics
 });
 
+resetRounds.addEventListener('click', () => {
+	if (isPerformanceMode()) {
+		alert(PERFORMANCE_MODE_ERR);
+	} else {
+		createRoundDOM(roundLimit.value);
+	}
+});
