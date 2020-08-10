@@ -10,6 +10,7 @@ const PERFORMANCE_MODE_ERR = '本番中に変更できない項目です\n変更
 
 // Replicant
 const teamsRep = nodecg.Replicant('teams');
+const roundRep = nodecg.Replicant('round');
 
 // Function
 function isPerformanceMode() {
@@ -71,7 +72,7 @@ acceptRounds.addEventListener('click', () => {
 	const roundCountAlfa = document.getElementById('roundAlfa').value;
 	const roundCountBravo = document.getElementById('roundBravo').value;
 	console.log('Alfa:', roundCountAlfa, 'Bravo:', roundCountBravo);
-	// Input data => graphics
+	roundRep.value = [roundLimit.value, [roundCountAlfa, roundCountBravo]];
 });
 
 resetRounds.addEventListener('click', () => {
