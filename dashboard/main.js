@@ -29,7 +29,6 @@ function createRoundDOM(taget, limit) {
 }
 
 function setRound(limit) {
-	// Need refactoring this function :)
 	const tagetAlfa = document.getElementById('roundAlfa');
 	const tagetBravo = document.getElementById('roundBravo');
 	createRoundDOM(tagetAlfa, limit);
