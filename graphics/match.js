@@ -19,7 +19,7 @@ teamsRep.on('change', newValue => {
 
 roundRep.on('change', newValue => {
 	createRoundDOM(newValue[0]);
-	changeRoundDOM(newValue[1][0],newValue[1][1]);
+	changeRoundDOM(newValue[1][0], newValue[1][1]);
 });
 
 // Function

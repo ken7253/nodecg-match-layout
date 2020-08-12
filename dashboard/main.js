@@ -15,29 +15,26 @@ const roundRep = nodecg.Replicant('round');
 // Function
 function isPerformanceMode() {
 	return performanceMode.checked;
-};
+}
 
-function createRoundDOM(round) {
+function createRoundDOM(taget, limit) {
+	taget.textContent = null;
+	for (let i = 0; i <= limit; i++) {
+		const optionEl = document.createElement('option');
+		const textContent = document.createTextNode(i);
+		optionEl.setAttribute('value', i);
+		optionEl.appendChild(textContent);
+		taget.appendChild(optionEl);
+	}
+}
+
+function setRound(limit) {
 	// Need refactoring this function :)
 	const tagetAlfa = document.getElementById('roundAlfa');
 	const tagetBravo = document.getElementById('roundBravo');
-	tagetAlfa.textContent = null;
-	tagetBravo.textContent = null;
-	for (let i = 0; i <= round; i++) {
-		const optionEl = document.createElement('option');
-		const textContent = document.createTextNode(i);
-		optionEl.setAttribute('value', i);
-		optionEl.appendChild(textContent);
-		tagetAlfa.appendChild(optionEl);
-	};
-	for (let i = 0; i <= round; i++) {
-		const optionEl = document.createElement('option');
-		const textContent = document.createTextNode(i);
-		optionEl.setAttribute('value', i);
-		optionEl.appendChild(textContent);
-		tagetBravo.appendChild(optionEl);
-	};
-};
+	createRoundDOM(tagetAlfa, limit);
+	createRoundDOM(tagetBravo, limit);
+}
 
 // EventListener
 // TeamSetting
@@ -57,14 +54,14 @@ switchTeams.addEventListener('click', () => {
 
 // RoundSetting
 window.addEventListener('load', () => {
-	createRoundDOM(1);
+	setRound(1);
 });
 
 roundLimit.addEventListener('change', () => {
 	if (isPerformanceMode()) {
 		alert(PERFORMANCE_MODE_ERR);
 	} else {
-		createRoundDOM(roundLimit.value);
+		setRound(roundLimit.value);
 	}
 });
 
@@ -79,6 +76,6 @@ resetRounds.addEventListener('click', () => {
 	if (isPerformanceMode()) {
 		alert(PERFORMANCE_MODE_ERR);
 	} else {
-		createRoundDOM(roundLimit.value);
+		setRound(roundLimit.value);
 	}
 });
