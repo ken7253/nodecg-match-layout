@@ -10,7 +10,7 @@
     "nodecg-bundle"
   ],
   "author": "ken7253",
-  "license": "ISC",
+  "license": "MIT",
   "nodecg": {
     "compatibleRange": "^1.1.1",
     "dashboardPanels": [
